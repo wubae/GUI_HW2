@@ -28,7 +28,9 @@ body {
 
 /* Website background image */
 html {
+	background-color: #00569f;
 	background: url(ptrbackground.jpg);
+	background-size: 25% 100%;
 	min-height: 100vh;
 	margin: 0;
 	padding: 0;
