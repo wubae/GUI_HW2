@@ -1,0 +1,135 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+/* Wrapper for containing the grid*/
+#wrapper {
+	display: grid;
+	grid-template-areas: 
+		"header header"  /* Header spans full width */
+		"nav content"  /* Navigation on the left, content on the right */
+		"nav footer";  /* Footer below content */
+	grid-template-columns: 20% 80%;  /* 20% width for nav, 80% for content */
+	grid-template-rows: auto 1fr auto;  /* Auto height for header and footer, content fills remaining space */
+	height: 100%;  /* Ensure the grid takes full height of the wrapper */
+}
+
+/* Box for content, white background*/
+body {
+	border: 0px;
+	background-color: white;
+	margin: 40px auto;
+	width: 80%;
+	min-width: 600px;
+	box-sizing: border-box;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Website background image */
+html {
+	background: url(ptrbackground.jpg);
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header background image*/
+header {
+	padding: 0;
+	color: white;
+	/* Dark blue to fill the background image*/
+	background-color: #000033;
+	background-image: url(sunset.jpg);
+	/* Image aligned to the right */
+	background-size: 25% 100%;
+	background-repeat: no-repeat;
+	background-position: right;
+	/* Assign the header to the header grid area */
+	grid-area: header;
+}
+
+#content {
+	padding: 20px;
+	/* Assign the content to the content grid area */
+	grid-area: content;
+}
+
+/* Shift the image to the left so text can be on the right*/
+#content img {
+    float: left;
+    margin-right: 40px;
+}
+
+/* Font color and weight for class 'resort' */
+.resort {
+	color: rgb(41, 120, 151);
+	font-weight: bold;
+}
+
+/* Background color and assign nav to the nav grid area*/
+nav {
+	background-color: skyblue;
+	grid-area: nav;
+}
+
+/* Font style and assign footer to the footer grid area*/
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+	grid-area: footer;
+	font-style: italic;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+/* Replace bullet points with 'marker.gif'*/
+#content li {
+	list-style-image: url(marker.gif);
+}
+
+/* Remove the underline*/
+nav ul {
+	font-size: 1.2em;
+	list-style-type: none;
+}
+
+/* Nav font color and font weight*/
+nav a {
+	color:#000033;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/* h1 & h2 adjustments and font color */
+h1 {
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 10px;
+}
+
+h2 {
+	color: #3399CC;
+	margin-top: 0;
+}
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	font-size: 90%;
+}
+
+dt {
+	color: #000033;
+}
+
