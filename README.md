@@ -1,3 +1,6 @@
 # HW2 GUI
 Style a Site with External CSS
-https://wubae.github.io/HW2/
+
+This is a homework assignment where we must code the appropriate CSS in order to match an image given to us.
+
+https://wubae.github.io/GUI_HW2/
